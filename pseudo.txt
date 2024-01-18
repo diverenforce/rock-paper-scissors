@@ -18,5 +18,15 @@ BEGIN
         SET choice2 to paper
         SET choice3 to scissors
 
-        SET randomChoice to random number between 1-100
+        SET randomChoice to generate random number between 1-100
+        IF randomChoice returns 33 or less THEN
+            return rock 
+        ELSE IF randomChoice returns between 33 and 66
+            return paper
+        ELSE return scissors
+
+        END IF
+    
+    END function
+END
 
