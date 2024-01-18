@@ -6,6 +6,8 @@ function getComputerChoice() {
     } else if(randomChoice < 66) {
         return 'Paper';
     } else {
-        return 'Scissors'
+        return 'Scissors';
     }
 }
+
+console.log(getComputerChoice());
