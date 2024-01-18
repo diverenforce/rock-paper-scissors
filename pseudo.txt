@@ -5,23 +5,19 @@ and return one of the choices in condition with random, or somehting like that
 
 
 1. Declare and Initialize getComputerChoice function without any parameter input.
-2. Initialize 3 variables with rock, paper and scissors.
-3. Initialize a 4th variable that stores a random number from 0-100.
-4. if the 4th variable gets a number less than 33, return strin rock, if it is between 33 and 66, return paper otherwise return scissors
+2.Initialize a 4th variable that stores a random number from 0-100.
+3. if the 4th variable gets a number less than 33, return strin rock, if it is less than 66, return paper otherwise return scissors
 
 
 
 
 BEGIN
     INIT getComputerChoice with no parameters
-        SET choice1 to rock
-        SET choice2 to paper
-        SET choice3 to scissors
 
         SET randomChoice to generate random number between 1-100
         IF randomChoice returns 33 or less THEN
             return rock 
-        ELSE IF randomChoice returns between 33 and 66
+        ELSE IF randomChoice returns less than 66
             return paper
         ELSE return scissors
 
