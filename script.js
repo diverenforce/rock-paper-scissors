@@ -42,7 +42,7 @@ function playRound(playerSelection,computerSelection) {
             break;
     
         case computerSelection === 'scissors' && playerSelection === 'paper':
-            console.log('Computer victory, rock beats scissors boo!');
+            return 'Computer victory, rock beats scissors boo!';
             break;
 
     }
