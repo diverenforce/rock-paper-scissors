@@ -30,27 +30,27 @@ function playRound(playerSelection) {
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
             ++botPoints;
-            return 'Player chose scissors and computer chose rock \n Computer wins this round!';
+            return 'Player chose scissors and computer chose rock \nComputer wins this round!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'rock':
             ++botPoints;
-            return 'Player chose rock and computer chose paper \n Computer wins this round!';
+            return 'Player chose rock and computer chose paper \nComputer wins this round!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'scissors':
             ++playerPoints;
-            return 'Player chose scissors and computer chose paper \n Player wins this round!';
+            return 'Player chose scissors and computer chose paper \nPlayer wins this round!';
             break;
 
         case computerSelection === 'scissors' && playerSelection === 'rock':
             ++playerPoints;
-            return 'Player chose rock and computer chose scissors \n Player wins this round!';
+            return 'Player chose rock and computer chose scissors \nPlayer wins this round!';
             break;
     
         case computerSelection === 'scissors' && playerSelection === 'paper':
             ++botPoints;
-            return 'Player chose paper and computer chose scissors \n Computer wins this round!';
+            return 'Player chose paper and computer chose scissors \nComputer wins this round!';
             break;
 
     }
