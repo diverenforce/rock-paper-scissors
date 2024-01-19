@@ -23,7 +23,7 @@ the round, and player selection should be case insensitive.
 
 
 BEGIN
-    INIT getComputerChoice with no parameters
+    INIT function getComputerChoice with no parameters
 
         SET randomChoice to generate random number between 1-100
         IF randomChoice returns 33 or less THEN
@@ -36,6 +36,15 @@ BEGIN
     
     END function
 
+    INIT function playRound with playerSelection and computerSelection(inherited from getComputerChoice function) parameters
+        DETERMINE playerSelection to have it case insensitive
+
+        CASE playerSelection OF
+            computerChoice equals to playerSelection: 
+                DISPLAY "It is a tie!"
+                CALL playRound() function again
+
+            computerChoice equals paper AND playerSelection equals rock:
 
 
 
