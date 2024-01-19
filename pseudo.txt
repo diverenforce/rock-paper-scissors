@@ -9,6 +9,17 @@ and return one of the choices in condition with random, or somehting like that
 3. if the 4th variable gets a number less than 33, return strin rock, if it is less than 66, return paper otherwise return scissors
 
 
+The second function would be the function that plays the game when invoked, a single round. It accepts 2 parameters as arguments, the player
+selection and computerchoice. It should return a string declaring the winner like, "You win! Paper beats rock.". Accounts ties by replaying
+the round, and player selection should be case insensitive.
+
+1. Declare and initialize the playRound() function, and inside the parenthesis, playerSelection and computerSelection.
+2. playerSelection gets first converted to all small letters no matter how it was entered.
+3. the computerSelection will store the value of getComputerChoice function.
+4. Using the switch case, we will make conditions in case, for every case. Of if this does not turn out well, if else conditions.
+
+
+
 
 
 BEGIN
@@ -24,5 +35,11 @@ BEGIN
         END IF
     
     END function
+
+
+
+
+
+
 END
 
