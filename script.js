@@ -10,15 +10,13 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice());
 
-
-function playRound(playerSelection,computerSelection) {
+function playRound(playerSelection) {
     playerSelection = playerSelection.toLowerCase();
-
+    const computerSelection = getComputerChoice();
     switch (true) {
         case computerSelection === playerSelection:
-            return playRound(playerSelection,getComputerChoice());
+            return playRound(playerSelection);
             break;
 
         case computerSelection === 'rock' && playerSelection === 'paper':
@@ -48,6 +46,4 @@ function playRound(playerSelection,computerSelection) {
     }
 }
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+console.log(playRound('rock'))

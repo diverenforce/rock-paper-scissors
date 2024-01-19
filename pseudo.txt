@@ -19,7 +19,8 @@ the round, and player selection should be case insensitive.
 4. Using the switch case, we will make conditions in case, for every case. Of if this does not turn out well, if else conditions.
 
 
-
+The final function is game time. I am guessing this function should be the main show of the program. Because it will probably include the
+other 2 functions of the program as well.
 
 
 BEGIN
