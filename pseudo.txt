@@ -21,6 +21,12 @@ the round, and player selection should be case insensitive.
 
 The final function is game time. I am guessing this function should be the main show of the program. Because it will probably include the
 other 2 functions of the program as well.
+Firstly first we prompt the user for their input of either resonance bow? paper or scissors.
+We store their input into a local variable inside the game function which is called playerSelection.
+After this we shall declare 2 more variables to store and increment points for the player and the bot, depending on the values of these
+variables the final output will be affected. Initialize these 2 variables with 0s, before invoking playGame function.
+At this moment I really should modify playGame fucntion by adding incrementing features. Now that I wrote this, I really should move these 
+2 variables to global scope instead? lol.
 
 
 BEGIN
