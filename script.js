@@ -23,23 +23,23 @@ function playRound(playerSelection,computerSelection) {
             break;
 
         case computerSelection === 'rock' && playerSelection === 'paper':
-            console.log('Player victory, paper beats rock!');
+            return 'Player victory, paper beats rock!';
             break;
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
-            console.log('Computer victory, rock beats scissors boo!');
+            return 'Computer victory, rock beats scissors boo!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'rock':
-            console.log('Computer victory, their paper beats your rock!');
+            return 'Computer victory, their paper beats your rock!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'scissors':
-            console.log('Player victory! Player\'s selection beat the heck outta the computer\'s');
+            return 'Player victory! Player\'s selection beat the heck outta the computer\'s';
             break;
 
         case computerSelection === 'scissors' && playerSelection === 'rock':
-            console.log('Player victory, rock beats scissors!');
+            return 'Player victory, rock beats scissors!';
             break;
     
         case computerSelection === 'scissors' && playerSelection === 'paper':
