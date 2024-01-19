@@ -1,3 +1,7 @@
+let playerPoints = 0;
+let botPoints = 0;
+
+
 function getComputerChoice() {
     let randomChoice =  Math.floor(Math.random() * 100) + 1;
 
@@ -20,26 +24,32 @@ function playRound(playerSelection) {
             break;
 
         case computerSelection === 'rock' && playerSelection === 'paper':
+            ++playerPoints;
             return 'Player victory, paper beats rock!';
             break;
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
+            ++botPoints;
             return 'Computer victory, rock beats scissors boo!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'rock':
+            ++botPoints;
             return 'Computer victory, their paper beats your rock!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'scissors':
+            ++playerPoints;
             return 'Player victory! Player\'s selection beat the heck outta the computer\'s';
             break;
 
         case computerSelection === 'scissors' && playerSelection === 'rock':
+            ++playerPoints;
             return 'Player victory, rock beats scissors!';
             break;
     
         case computerSelection === 'scissors' && playerSelection === 'paper':
+            ++botPoints;
             return 'Computer victory, rock beats scissors boo!';
             break;
 
