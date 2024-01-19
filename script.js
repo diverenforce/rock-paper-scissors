@@ -16,10 +16,10 @@ console.log(getComputerChoice());
 function playRound(playerSelection,computerSelection) {
     playerSelection = playerSelection.toLowerCase();
 
-    switch (playerSelection) {
-        case computerSelection:
+    switch (true) {
+        case computerSelection === playerSelection:
             console.log('It is a tie, my friends! Restarting round.');
-            playRound(playerSelection,computerSelection);
+            playRound(playerSelection,getComputerChoice());
             break;
 
         case computerSelection === 'rock' && playerSelection === 'paper':
