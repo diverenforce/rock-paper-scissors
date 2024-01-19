@@ -69,7 +69,11 @@ BEGIN
             CALL playRound() with the argument userSelection
         END FOR
 
-        
+        IF playerPoints are greater than botPoints THEN
+            DISPLAY "Victory! You get hero sword!"
+        ELSE DISPLAY "You have lost!"
+
+        END IF
 
 END
 
