@@ -56,4 +56,14 @@ function playRound(playerSelection) {
     }
 }
 
+function game() {
+    for (i = 1; i<=5;++i) {
+        let playerSelection = prompt('Choose either rock, paper or scissors');
+        console.log(playRound(playerSelection));
+    }
+
+}
+
+
+
 console.log(playRound('rock'))

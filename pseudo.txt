@@ -61,6 +61,15 @@ BEGIN
     END FUNCTION
 
 
+    INT game() function 
+        FOR 5 iterations 
+            SET userSelection variable and 
+            GET either rock, paper or scissors from user
+
+            CALL playRound() with the argument userSelection
+        END FOR
+
+        
 
 END
 
