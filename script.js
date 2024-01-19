@@ -25,32 +25,32 @@ function playRound(playerSelection) {
 
         case computerSelection === 'rock' && playerSelection === 'paper':
             ++playerPoints;
-            return 'Player victory, paper beats rock!';
+            return 'Player chose paper and computer chose rock \n Player wins this round!';
             break;
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
             ++botPoints;
-            return 'Computer victory, rock beats scissors boo!';
+            return 'Player chose scissors and computer chose rock \n Computer wins this round!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'rock':
             ++botPoints;
-            return 'Computer victory, their paper beats your rock!';
+            return 'Player chose rock and computer chose paper \n Computer wins this round!';
             break;
 
         case computerSelection === 'paper' && playerSelection === 'scissors':
             ++playerPoints;
-            return 'Player victory! Player\'s selection beat the heck outta the computer\'s';
+            return 'Player chose scissors and computer chose paper \n Player wins this round!';
             break;
 
         case computerSelection === 'scissors' && playerSelection === 'rock':
             ++playerPoints;
-            return 'Player victory, rock beats scissors!';
+            return 'Player chose rock and computer chose scissors \n Player wins this round!';
             break;
     
         case computerSelection === 'scissors' && playerSelection === 'paper':
             ++botPoints;
-            return 'Computer victory, rock beats scissors boo!';
+            return 'Player chose paper and computer chose scissors \n Computer wins this round!';
             break;
 
     }
@@ -70,6 +70,5 @@ function game() {
 
 }
 
+game();
 
-
-console.log(playRound('rock'))
