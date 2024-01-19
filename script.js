@@ -61,7 +61,13 @@ function game() {
         let playerSelection = prompt('Choose either rock, paper or scissors');
         console.log(playRound(playerSelection));
     }
-    
+
+    if (playerPoints > botPoints) {
+        console.log("Victory! You get a hero sword!");
+    } else if (playerPoints === botPoints) {
+        console.log('It is a tie, my friends!');
+    } else {console.log('You have lost.')}
+
 }
 
 

@@ -71,9 +71,12 @@ BEGIN
 
         IF playerPoints are greater than botPoints THEN
             DISPLAY "Victory! You get hero sword!"
-        ELSE DISPLAY "You have lost!"
-
+        ELSE IF playerPoints are equal to botPoints THEN
+            DISPLAY "It is a tie, my friends!"        
+        ELSE DISPLAY 
+            "You have lost!"
         END IF
 
+    END game() function
 END
 
