@@ -49,6 +49,6 @@ function playRound(playerSelection,computerSelection) {
     }
 }
 
-console.log(playRound('ROck',getComputerChoice()));
-console.log(playRound('PaPEr',getComputerChoice()));
-console.log(playRound('scISSoRS',getComputerChoice()));
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));

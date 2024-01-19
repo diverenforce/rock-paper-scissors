@@ -39,14 +39,18 @@ BEGIN
     INIT function playRound with playerSelection and computerSelection(inherited from getComputerChoice function) parameters
         DETERMINE playerSelection to have it case insensitive
 
-        CASE playerSelection OF
+        CASE TRUE OF
             computerChoice equals to playerSelection: 
                 DISPLAY "It is a tie!"
                 CALL playRound() function again
 
             computerChoice equals paper AND playerSelection equals rock:
 
+            I shall skip the writing of the pseudo code as I have already got this part working on the actual code mAHAHHAHA
 
+        END CASE
+    
+    END FUNCTION
 
 
 
