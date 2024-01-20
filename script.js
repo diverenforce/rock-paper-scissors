@@ -20,12 +20,13 @@ function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
     switch (true) {
         case computerSelection === playerSelection:
+            console.log('omg its a draw!')
             return playRound(playerSelection);
             break;
 
         case computerSelection === 'rock' && playerSelection === 'paper':
             ++playerPoints;
-            return 'Player chose paper and computer chose rock \n Player wins this round!';
+            return 'Player chose paper and computer chose rock \nPlayer wins this round!';
             break;
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
