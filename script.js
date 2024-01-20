@@ -15,14 +15,16 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    let choice = prompt('Enter rock paper or scissors');
+    let choice = prompt('Enter rock paper or scissors').toLowerCase();
 
-    choice = rock 
-    || paper 
-    || scissors ?
-    choice.toLowerCase() :
-    console.log("That ain't rock or paper or scissors boy.")
-
+    if (choice === 'rock' || choice === 'paper' || choice === 'scissors') {
+        console.log(`You have chosen ${choice}`);
+        return choice;
+    } else {
+        console.log('That aint no rock or paper or scissors.')
+        getPlayerChoice();
+    }
+    
 }
 
 
@@ -53,7 +55,7 @@ function playRound(playerSelection) {
 function game() {
     for (i = 1; i<=5;++i) {
         
-        playRound(playerSelection);
+        playRound(getPlayerChoice());
     }
 
     if (playerPoints > botPoints) {
