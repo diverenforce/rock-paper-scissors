@@ -68,11 +68,5 @@ function game() {
 
 }
 
-function tryAgain() {
-    let bool = conform('Would you like to ')
-}
-
-
-
 game();
 
