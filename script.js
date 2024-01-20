@@ -14,9 +14,20 @@ function getComputerChoice() {
     }
 }
 
+function getPlayerChoice() {
+    let choice = prompt('Enter rock paper or scissors');
+
+    choice = rock 
+    || paper 
+    || scissors ?
+    choice.toLowerCase() :
+    console.log("That ain't rock or paper or scissors boy.")
+
+}
+
+
 
 function playRound(playerSelection) {
-    playerSelection = playerSelection.toLowerCase();
     const computerSelection = getComputerChoice();
     switch (true) {
         case computerSelection === playerSelection:
