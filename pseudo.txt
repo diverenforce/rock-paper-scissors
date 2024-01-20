@@ -80,3 +80,30 @@ BEGIN
     END game() function
 END
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+1/20/2024 - Pseudo polish - thank you to webster
+Goals are 
+to make it so that every time computer and player are tied, give both a reroll.
+Hard code/defense code for the prompts
+Give an option to retry
+
+switch(computerSelection) {
+            case 'R':
+                cFinal = 'Resonance Blood scourge railgun';
+                break;
+            case 'P':
+                cFinal = 'Precision Pulse rifle';
+            case 'S':
+                cFinal = 'Soulshatter Scorch Blade';
+        }
+        switch(playerSelection) {
+            case 'R':
+                pFinal = 'Resonance Blood scourge railgun';
+                break;
+            case 'P':
+                pFinal = 'Precision Pulse rifle';
+            case 'S':
+                pFinal = 'Soulshatter Scorch Blade';
+        }
+
+From now on I write pseudo in physical book actually

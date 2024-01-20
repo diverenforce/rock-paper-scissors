@@ -28,21 +28,21 @@ function playRound(playerSelection) {
         case computerSelection === 'paper' && playerSelection === 'scissors':
         case computerSelection === 'scissors' && playerSelection === 'rock':
             ++playerPoints;
-            return `Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`;
+            return console.log(`Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`);
 
         case computerSelection === 'rock' && playerSelection === 'scissors':
         case computerSelection === 'paper' && playerSelection === 'rock':
         case computerSelection === 'scissors' && playerSelection === 'paper':
             ++botPoints;
-            return `Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`;
+            return console.log(`Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`);
 
     }
 }
 
 function game() {
     for (i = 1; i<=5;++i) {
-        let playerSelection = prompt('Choose either rock, paper or scissors');
-        console.log(playRound(playerSelection));
+        
+        playRound(playerSelection);
     }
 
     if (playerPoints > botPoints) {
