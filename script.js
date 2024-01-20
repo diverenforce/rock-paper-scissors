@@ -58,13 +58,21 @@ function game() {
         playRound(getPlayerChoice());
     }
 
-    if (playerPoints > botPoints) {
-        console.log("Victory! You get a hero sword!");
-    } else if (playerPoints === botPoints) {
-        console.log('It is a tie, my friends!');
-    } else {console.log('You have lost.')}
+    if (playerPoints === botPoints) {
+        console.log("It is a tie, Both you and the computer get a cookie");
+    } else if (playerPoints === 5) {
+        console.log('Spectacular! You are the cool guy!');
+    } else if (playerPoints < botPoints) {
+        console.log('Oof at least you tried. Better luck next time')
+    }
 
 }
+
+function tryAgain() {
+    let bool = conform('Would you like to ')
+}
+
+
 
 game();
 
