@@ -33,8 +33,8 @@ function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
     switch (true) {
         case computerSelection === playerSelection:
-            console.log('omg its a draw!')
-            return playRound(playerSelection);
+            console.log('omg its a draw! Please choose again!')
+            return playRound(getPlayerChoice());
             
 
         case computerSelection === 'rock' && playerSelection === 'paper':
