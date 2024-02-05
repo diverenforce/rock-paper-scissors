@@ -1,6 +1,6 @@
 let playerPoints = 0;
 let botPoints = 0;
-
+let displayBox = document.querySelector('#display')
 
 function getComputerChoice() {
     let randomChoice =  Math.floor(Math.random() * 100) + 1;
@@ -18,10 +18,10 @@ function getPlayerChoice() {
     let choice = prompt('Enter rock paper or scissors').toLowerCase();
 
     if (choice === 'rock' || choice === 'paper' || choice === 'scissors') {
-        console.log(`You have chosen ${choice}`);
+        displayBox.textContent = `You have chosen ${choice}`;
         return choice;
     } else {
-        console.log('That aint no rock or paper or scissors.')
+        displayBox.textContent = 'That aint no rock or paper or scissors.';
         getPlayerChoice();
     }
     
@@ -33,7 +33,7 @@ function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
     switch (true) {
         case computerSelection === playerSelection:
-            console.log('omg its a draw! Please choose again!')
+            displayBox.textContent = 'omg its a draw! Please choose again!';
             return playRound(getPlayerChoice());
             
 
@@ -41,19 +41,19 @@ function playRound(playerSelection) {
         case computerSelection === 'paper' && playerSelection === 'scissors':
         case computerSelection === 'scissors' && playerSelection === 'rock':
             ++playerPoints;
-            return console.log(`Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`);
-
+             displayBox.textContent += '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`;
+            break;
         case computerSelection === 'rock' && playerSelection === 'scissors':
         case computerSelection === 'paper' && playerSelection === 'rock':
         case computerSelection === 'scissors' && playerSelection === 'paper':
             ++botPoints;
-            return console.log(`Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`);
+             displayBox.textContent += '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`;
 
     }
 }
 
-let btn = document.querySelector(button);
+let btn = document.querySelector('button');
 
 
-btn.addEventListener('click', playRound);
+btn.addEventListener('click', playRound(getPlayerChoice()));
 
