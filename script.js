@@ -52,8 +52,11 @@ function playRound(playerSelection) {
     }
 }
 
-let btn = document.querySelector('button');
+let rbtn = document.querySelector('#rbtn');
+let pbtn = document.querySelector('pbtn');
+let sbtn = document.querySelector('sbtn');
 
-
-btn.addEventListener('click', playRound(getPlayerChoice()));
+rbtn.addEventListener('click', playRound('rock'));
+pbtn.addEventListener('click', playRound('paper'));
+sbtn.addEventListener('click', playRound('scissors'));
 
