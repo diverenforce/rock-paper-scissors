@@ -34,27 +34,27 @@ function playRound(playerSelection) {
     switch (true) {
         case computerSelection === playerSelection:
             displayBox.textContent = 'omg its a draw! Please choose again!';
-            return playRound(getPlayerChoice());
+            return;
             
 
         case computerSelection === 'rock' && playerSelection === 'paper':
         case computerSelection === 'paper' && playerSelection === 'scissors':
         case computerSelection === 'scissors' && playerSelection === 'rock':
             ++playerPoints;
-             displayBox.textContent += '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`;
+             displayBox.textContent = '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nPlayer wins this round!`;
             break;
         case computerSelection === 'rock' && playerSelection === 'scissors':
         case computerSelection === 'paper' && playerSelection === 'rock':
         case computerSelection === 'scissors' && playerSelection === 'paper':
             ++botPoints;
-             displayBox.textContent += '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`;
+             displayBox.textContent = '\n' + `Player chose ${playerSelection} and computer chose ${computerSelection} \nComputer wins this round!`;
 
     }
 }
 
 let rbtn = document.querySelector('#rbtn');
-let pbtn = document.querySelector('pbtn');
-let sbtn = document.querySelector('sbtn');
+let pbtn = document.querySelector('#pbtn');
+let sbtn = document.querySelector('#sbtn');
 
 rbtn.addEventListener('click', playRound('rock'));
 pbtn.addEventListener('click', playRound('paper'));
