@@ -52,23 +52,8 @@ function playRound(playerSelection) {
     }
 }
 
+let btn = document.querySelector(button);
 
-// remove logic that plays 5 rounds
-/* function game() { 
-    for (i = 1; i<=5;++i) {
-        
-        playRound(getPlayerChoice());
-    }
 
-    if (playerPoints === botPoints) {
-        console.log("It is a tie, Both you and the computer get a cookie");
-    } else if (playerPoints === 5) {
-        console.log('Spectacular! You are the cool guy!');
-    } else if (playerPoints < botPoints) {
-        console.log('Oof at least you tried. Better luck next time')
-    }
-
-}
-*/
-game();
+btn.addEventListener('click', playRound);
 
