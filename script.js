@@ -2,6 +2,16 @@ let playerPoints = 0;
 let botPoints = 0;
 let displayBox = document.querySelector('#display')
 
+let rbtn = document.querySelector('#rbtn');
+let pbtn = document.querySelector('#pbtn');
+let sbtn = document.querySelector('#sbtn');
+
+rbtn.addEventListener('click', playRound('rock'));
+pbtn.addEventListener('click', playRound('paper'));
+sbtn.addEventListener('click', playRound('scissors'));
+
+
+
 function getComputerChoice() {
     let randomChoice =  Math.floor(Math.random() * 100) + 1;
 
@@ -52,11 +62,4 @@ function playRound(playerSelection) {
     }
 }
 
-let rbtn = document.querySelector('#rbtn');
-let pbtn = document.querySelector('#pbtn');
-let sbtn = document.querySelector('#sbtn');
-
-rbtn.addEventListener('click', playRound('rock'));
-pbtn.addEventListener('click', playRound('paper'));
-sbtn.addEventListener('click', playRound('scissors'));
 
