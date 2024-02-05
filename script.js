@@ -52,7 +52,9 @@ function playRound(playerSelection) {
     }
 }
 
-function game() {
+
+// remove logic that plays 5 rounds
+/* function game() { 
     for (i = 1; i<=5;++i) {
         
         playRound(getPlayerChoice());
@@ -67,6 +69,6 @@ function game() {
     }
 
 }
-
+*/
 game();
 
